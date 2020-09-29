@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!-- script -->
+    <script src="./javascripts/noti.js"></script>
+
+</head>
+<body>
+    <section class="main">
+        <div class="loginbox_big">
+            <div class="title">
+                    <div><img class="img_wantreez" src="./images/gold_full_medium.png" alt=""></div>
+                <div class="login">
+                    <div class="IDPW1"><h2>ID</h2></div>
+                    <form action="/login" method="post">
+                    <div><input class="box1" type="text" placeholder="ID" value="" name="id"></div>
+                    <div class="IDPW"><h2>PASSWORD</h2></div>
+                    <div><input class="box2" type="password" placeholder="passsword" value="" name="pw"></div>
+                    </form>
+                    <input class="log_button" type="button" value="로그인" onclick=noti()>
+                    <input class="reg_button" type="button" value="회원가입">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

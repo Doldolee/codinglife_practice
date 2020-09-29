@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .JS{
+            font-weight: bold;
+
+        }
+        #first{
+            color: brown;
+        }
+        span{
+            color: blue;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="test1.js"> </script>
+</head>
+<body>
+
+    <h1 style="color: blue;"><strong><u>WEB</u></strong></h1>
+    <p>
+        <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';">
+        <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';">
+
+        <input id='night_day' type="button" value="night" onclick="
+        
+            if (document.querySelector('#night_day').value === 'night'){
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.color='white';
+                document.querySelector('#night_day').value = 'day';
+            } else{
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('body').style.color='black';
+                document.querySelector('#night_day').value = 'night';
+            }
+            
+        
+        ">
+    </p>
+    <div>
+        <ol>
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">javascript</a></li>
+        </ol>
+    </div>
+
+    <h2><span id="first" class="JS">JAVASCRIPT</span></h2>
+    <P> JAVA</P>
+
+<!-- 리팩토링, while, array -->
+    <input type="button" value="night" onclick="nightDayHandler(this);">
+</body>
+</html>
